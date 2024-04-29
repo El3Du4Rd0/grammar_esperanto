@@ -143,5 +143,7 @@ Here are some examples for incorrect sentences for the grammar:
 
 In my file LL1 i represent a LL(1) parsing for my grammar, here i reflect in whitch cases my not terminals elements goes to a terminal element or to an other not terminal element to construct the grammar.
 [LL1](https://github.com/El3Du4Rd0/grammar_esperanto/blob/main/LL1.pdf)
+
+In the LL(1) table i use a simplified syntax, i don't use the arrows to indicate from where is constructed the grammar because it won't fit in a pdf file, and because any not terminal element in my parser is directly connected to a terminal element 
 ## Analysis
 This kind of grammar is into the third level of the Chomsky Hierarchy Extended Level, because in this level is where the regular grammars are and them can generate regular lenguages that esperanto is one. This kind of grammar can't be in any other lower level because it is recursive and it wont fit in the criteria for a context-free grammar, that is the level two.
