@@ -1,6 +1,6 @@
 # grammar_esperanto
 ## Description
-in this evidence i have to create a grammar that represents the lenguage Esperanto, make a model of that grammar, do the implementation, test it and realize the complexity analysis
+in this evidence i have to create a grammar that represents the lenguage Esperanto, make a model of that grammar, do the implementation, test it and realize the complexity analysis. There is not an specific program paradigm for this problem.
 
 Esperanto is a constructed lenguage created by Zamenhof in 1887. The word Esperanto translates into english as "the one who hopes". Esperanto was created with the idea to become the new universal lenguage, sadly that dream won't come true. 
 
@@ -147,3 +147,7 @@ In my file LL1 i represent a LL(1) parsing for my grammar, here i reflect in whi
 In the LL(1) table i use a simplified syntax, i don't use the arrows to indicate from where is constructed the grammar because it won't fit in a pdf file, and because any not terminal element in my parser is directly connected to a terminal element 
 ## Analysis
 This kind of grammar is into the third level of the Chomsky Hierarchy Extended Level, because in this level is where the regular grammars are and them can generate regular lenguages that esperanto is one. This kind of grammar can't be in any other lower level because it is recursive and it wont fit in the criteria for a context-free grammar, that is the level two.
+
+The time complexity of the grammar is O(n), witch n is the number fo characters in a given string, because it is a non ambiguous grammar, but in the worst cases it could be an O(n^2) because it has a lot of diferent rules, first a mathematical expretion that is recursive and can lead to deeper parse trees, second a plural and a singular that can have nominative, and accusative forms, along with adjectives and verbs.
+
+According to analyse witch other solutions can solve the problem we can also try using an automaton, because you can check each word as a letter of an alphabet of the automaton and check if the result of testign the full sentence is a correct word or not. Another posible solution is using a regular expretion, because as the automaton you can construct each posible correct case one by one, and its rules. Finally analysing all this posible solution i can conclude that using a context-free grammar is the most eficient solution of this problem, most because you can express the rules more clearly and briefly than using a regular expretion or an automaton.
