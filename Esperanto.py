@@ -1,8 +1,10 @@
 import nltk
 from nltk import CFG
+
+# Download required NLTK data
 nltk.download('punkt')
 
-# Define a context-free grammar
+# Define the context-free grammar (CFG) for Esperanto
 grammar = CFG.fromstring("""
     E -> Sin | Plu | Mat
     Sin -> SNom | SAcu
@@ -34,15 +36,15 @@ grammar = CFG.fromstring("""
     Nc -> 'cent' | 'ducent' | 'tricent' | 'kvarcent' | 'kvincent' | 'sescent' | 'sepcent' | 'okcent' | 'naucent'
 """)
 
-# Create a parser with the defined grammar
+# Create a chart parser with the defined grammar
 parser = nltk.ChartParser(grammar)
 
-# Input sentence to be parsed
+# Define the input sentence
 sentence = "unu minus unu minus unu minus unu"
 
-# Tokenize the sentence
+# Tokenize the input sentence
 tokens = nltk.word_tokenize(sentence)
 
-# Parse the sentence
+# Parse and pretty print the parse trees
 for tree in parser.parse(tokens):
     tree.pretty_print()
