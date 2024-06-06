@@ -151,3 +151,6 @@ This kind of grammar is into the third level of the Chomsky Hierarchy Extended L
 The time complexity of the grammar is O(n), witch n is the number fo characters in a given string, because it is a non ambiguous grammar, but in the worst cases it could be an O(n^3) because it is a free-context grammar and because it has a lot of diferent rules, first a mathematical expretion that is recursive and can lead to deeper parse trees, second a plural and a singular that can have nominative, and accusative forms, along with adjectives and verbs.
 
 According to analyse witch other solutions can solve the problem we can also try using an automaton, because you can check each word as a letter of an alphabet of the automaton and check if the result of testign the full sentence is a correct word or not. Another posible solution is using a regular expretion, because as the automaton you can construct each posible correct case one by one, and its rules. Finally analysing all this posible solution i can conclude that using a context-free grammar is the most eficient solution of this problem, most because you can express the rules more clearly and briefly than using a regular expretion or an automaton.
+
+## References
+Aprender esperanto  |   El curso más rápido para aprender lo imprescindible. (n.d.). https://esperanto12.net/es/ 
